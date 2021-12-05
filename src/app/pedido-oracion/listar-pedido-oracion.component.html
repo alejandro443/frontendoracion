@@ -1,0 +1,30 @@
+<table class="table">
+  <thead>
+      <tr>
+          <th scope="col">Id</th>
+          <th scope="col">pedido</th>
+          <th scope="col">repuesta</th>
+          <th scope="col">fecha_pedido</th>
+          <th scope="col">fecha_oracion</th>
+          <th scope="col">Ver</th>
+          <th scope="col">Editar</th>
+          <th scope="col">Borrar</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngForOf="let pedidooracion of pedidooracion">
+
+           <td>{{pedidooracion.id}}</td>
+          <td>{{pedidooracion.estado}}</td>
+          <td>{{pedidooracion.respuesta}}</td>
+          <td>{{pedidooracion.f_pedido}}</td>
+     <!--            Required meta tags  <td><button class="btn btn-outline-primary" routerLink="/detalle/{{producto.id}}"><i class="fas fa-eye"></i>Detalle</button></td>
+        <td><button cla     ss="btn btn-outline-warning" routerLink="/editar/{{producto.id}}"><i class="fas fa-edit"></i>Editar</button></td>
+        <td><button class="btn btn-outline-danger" (click)="borrar(producto.id)"><i class="far fa-trash-alt"></i>Eliminar</button></td>
+-->
+      </tr>
+
+  </tbody>
+</table>
+
+<!--// {{pedidooracion | json }} -->
