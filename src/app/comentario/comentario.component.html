@@ -13,14 +13,13 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngForOfOf="let personas of personas ; let pedidooracion of pedidooracions">
+        <tr *ngFor="let personas of personas ">
 
 
             <td>{{personas.nombre}}</td>
 
-
-            <td>{{pedidooracion.estado}}</td>
-            <!--       Required meta tags  <td><button class="btn btn-outline-primary" routerLink="/detalle/{{producto.id}}"><i class="fas fa-eye"></i>Detalle</button></td>
+            <!--    <td>{{pedidooracion.id}}</td>
+            <td>{{pedidooracion.estado}}</td>        Required meta tags  <td><button class="btn btn-outline-primary" routerLink="/detalle/{{producto.id}}"><i class="fas fa-eye"></i>Detalle</button></td>
         <td><button cla     ss="btn btn-outline-warning" routerLink="/editar/{{producto.id}}"><i class="fas fa-edit"></i>Editar</button></td>
         <td><button class="btn btn-outline-danger" (click)="borrar(producto.id)"><i class="far fa-trash-alt"></i>Eliminar</button></td>
           {{pedidooracion | json }} {{personas | json }}     -->

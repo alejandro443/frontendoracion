@@ -17,7 +17,7 @@ export class ComentarioComponent implements OnInit {
 
   ngOnInit(): void {
   this.cargarPersona();
-  this.cargarpedido();
+  this.cargarpedido()
   }
 
   cargarpedido(): void {
